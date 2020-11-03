@@ -243,22 +243,22 @@ nav {
   text-decoration: none;
 }
 #color-picker {
-  background: url("./images/Color-image.png");
+  background: url("./Images/Color-image.png");
   background-size: 48vh 37vh;
   width: 48vh;
 }
 #beatmaker {
-  background: url("./images/Beatmaker-image.png");
+  background: url("./Images/Beatmaker-image.png");
   background-size: 50vh 37vh;
   width: 48vh;
 }
 #fav-artist {
-  background: url("./images/bands-image.png");
+  background: url("./Images/bands-image.png");
   background-size: 48vh 37vh;
   width: 48vh;
 }
 #tip-calculator {
-  background: url("./images/Tip-calc-image.png");
+  background: url("./Images/Tip-calc-image.png");
   background-size: 48.2vh 38.5vh;
   width: 48vh;
 }
