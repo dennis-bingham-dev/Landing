@@ -1,0 +1,265 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #3d2e4b;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background-color: #282d4d;
+}
+.logo {
+  color: white;
+  letter-spacing: 1px;
+  font-size: 34px;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+.nav-links li {
+  list-style-type: none;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 20px;
+  padding: 6px;
+}
+
+.nav-links a:hover {
+  border-bottom: 2px solid white;
+  transition: 0.1s ease;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.header-image {
+  background-image: url("./Images/Mountain.jpg");
+  height: 100vh;
+}
+
+#projects,
+#experience,
+#about,
+#links {
+  margin: 20px;
+  margin-left: 35px;
+  margin-right: 0px;
+  padding-top: 20px;
+}
+
+.gs,
+.stm,
+.led {
+  line-height: 1.4;
+  margin: 20px;
+  margin-left: 34px;
+}
+
+.led {
+  margin-bottom: 4px;
+}
+
+.resume_button {
+  border-radius: 6px;
+  display: inline-block;
+  background: white;
+  color: #282d4d;
+  padding: 16px;
+  font-weight: bold;
+  border: none;
+  font-size: 17px;
+  margin: 15px 15px 30px 0;
+}
+
+.resume_button:hover {
+  cursor: pointer;
+}
+
+.about-header,
+.experience-header,
+.projects-header {
+  margin-bottom: 25px;
+}
+
+.about_list {
+  line-height: 1.75;
+  font-size: 18px;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#links {
+  padding-bottom: 20px;
+}
+
+.linkedin img {
+  max-width: 250px;
+  height: auto;
+  float: left;
+  margin-right: 20px;
+  padding-bottom: 20px;
+}
+
+.github img {
+  max-width: 205px;
+  height: auto;
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 20px;
+}
+
+.email img {
+  max-width: 80px;
+  height: auto;
+  border-radius: 6px;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  nav {
+    justify-content: initial;
+    position: fixed;
+    background-color: #282d4d;
+  }
+
+  .nav-links {
+    position: absolute;
+    left: 0px;
+    height: 92vh;
+    top: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 50%;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in;
+    background-color: #282d4d;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+    margin-left: 30px;
+    background-color: #282d4d;
+    margin-right: 375px;
+  }
+  .logo {
+    position: fixed;
+    right: 0px;
+    background-color: #282d4d;
+    padding-top: 12.3px;
+    padding-bottom: 12.3px;
+    padding-left: 30px;
+    padding-right: 60px;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(0px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(30px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(45deg) translate(5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(-45deg) translate(5px, -6px);
+}
+
+/* PROJECT IMAGES */
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 4vh;
+}
+.project {
+  padding-bottom: 1vh;
+  border-radius: 2.5vh;
+  height: 37vh;
+  width: 30vh;
+  cursor: pointer;
+  padding-right: 1vh;
+  padding-left: 1vh;
+  margin-bottom: 8vh;
+}
+.project h2 {
+  position: relative;
+  padding-top: 40vh;
+  text-align: center;
+  color: white;
+}
+.cards a {
+  text-decoration: none;
+}
+#color-picker {
+  background: url("./images/Color-image.png");
+  background-size: 48vh 37vh;
+  width: 48vh;
+}
+#beatmaker {
+  background: url("./images/Beatmaker-image.png");
+  background-size: 50vh 37vh;
+  width: 48vh;
+}
+#fav-artist {
+  background: url("./images/bands-image.png");
+  background-size: 48vh 37vh;
+  width: 48vh;
+}
+#tip-calculator {
+  background: url("./images/Tip-calc-image.png");
+  background-size: 48.2vh 38.5vh;
+  width: 48vh;
+}
+/* PROJECT TITLES */
