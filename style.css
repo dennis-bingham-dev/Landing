@@ -246,16 +246,19 @@ nav {
   background: url("./Images/Color-image.png");
   background-size: 48vh 37vh;
   width: 48vh;
+  margin-right: 5px;
 }
 #beatmaker {
   background: url("./Images/Beatmaker-image.png");
   background-size: 50vh 37vh;
   width: 48vh;
+  margin-right: 5px;
 }
 #fav-artist {
   background: url("./Images/bands-image.png");
   background-size: 48vh 37vh;
   width: 48vh;
+  margin-right: 5px;
 }
 #tip-calculator {
   background: url("./Images/Tip-calc-image.png");
